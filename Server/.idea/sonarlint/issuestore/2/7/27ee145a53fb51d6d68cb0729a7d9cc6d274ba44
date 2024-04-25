@@ -1,0 +1,10 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÜ¥ùøÿÿÿÿ
+=
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+v
+java:S1450"[Remove the "serverSocket" field and declare it as a local variable in the relevant methods.(“—Ó¿ýÿÿÿÿ
+?	java:S106"+Replace this use of System.out by a logger.(Ï£Û
+@	java:S106"+Replace this use of System.out by a logger.(„³¾Ò
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(•‹Ù

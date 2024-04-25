@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Journalism";
+  src: url("font/Journalism.otf") format("opentype");
+}
+
+.heady{
+color: 000;
+font-family: 'Montserrat', sans-serif;
+font-size:16px;
+margin-top: 50px;
+text-align: center;
+}
+
+h1{
+color: #D33160;
+font-family: 'Journalism';
+font-size: 85px;
+margin-top: 75px;
+text-align: center;
+}
+
+p{
+color: 000;
+font-family: 'Montserrat', sans-serif;
+font-size:16px;
+margin-top: 25px;
+
+}
+
+h2{
+color: #757473;
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+margin-top: 60px;
+text-align: center;
+}
+
+h6
+{
+color: 000;
+font-family: 'Montserrat', sans-serif;
+font-size:16px;
+margin-top: 18px;
+margin-left: 20px;
+margin-right: 20px;
+}
+.container{
+width=1160px;
+}
+.centered-wrapper {
+    text-align: center;
+}
+.centreimg {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.rightimg {
+    margin-top: 100px;
+    margin-left: 225px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text {
+
+     margin-top: 334px;
+    margin-left: 150px;
+
+}
+
+.centretext {
+    text-align: center;
+     margin-top: 100px;
+}
+
+textwrapper{
+color: 000;
+font-family: 'Montserrat', sans-serif;
+font-size:35px;
+font-weight:700px;
+}
+
+.firstbutton{
+color: #ffffff;
+background-color:#daa07b;
+font-family:'Montserrat', sans-serif;
+font-weight:400;}
