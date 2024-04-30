@@ -90,3 +90,24 @@ color: #ffffff;
 background-color:#daa07b;
 font-family:'Montserrat', sans-serif;
 font-weight:400;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.form-content {
+    background-color: #fefefe;
+        margin: 15% auto; /* 15% отступ сверху и снизу, центрировать по горизонтали */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+}

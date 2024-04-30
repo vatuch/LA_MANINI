@@ -38,7 +38,7 @@
 
 <div class="catalog-of-products first part" style="display: flex;">
     <div class="first-product" style="margin-left: 50px;">
-        <div class="js-product-link" href="order">
+        <div class="js-product-link" href="#" onclick="openForm()">
             <div class="first-content">
                 <div class="img" style="padding-bottom: 0;">
                     <div class="first-img">
@@ -62,7 +62,7 @@
                 <table style="width: 100%; height: 100%;">
                     <tbody>
                     <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                        <td><a href="#order" onclick="updateTotal('КОФЕ',300)"style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -94,7 +94,7 @@
                 <table style="width: 100%; height: 100%;">
                     <tbody>
                     <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                        <td><a href="#order" onclick="updateTotal('ДАБЛ ВАНИЛЬ' ,300)" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -126,7 +126,7 @@
                 <table style="width: 100%; height: 100%;">
                     <tbody>
                     <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                        <td><a href="#order" onclick="updateTotal('РОЗА',300)" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -134,130 +134,186 @@
         </div>
     </div>
 </div>
+
 
 <div class="catalog-of-products second part" style="display: flex;">
-    <div class="fourth-product" style="margin-left: 50px;">
-        <div class="js-product-link" href="order">
-            <div class="fourth-content">
-                <div class="img" style="padding-bottom: 0;">
-                    <div class="fourth-img">
-                        <img src="img/мадагаскар.png" width="400" height="450">
+<div class="fourth-product" style="margin-left: 50px;">
+    <div class="js-product-link" href="order">
+        <div class="fourth-content">
+            <div class="img" style="padding-bottom: 0;">
+                <div class="fourth-img">
+                    <img src="img/мадагаскар.png" width="400" height="450">
+                </div>
+                <div class="text-wrapper">
+                    <div>
+                        <h3>МАДАГАСКАР</h3>
+                        <p> Бисквит шоколадный. Мусс Лакте. Бисквит. <br> С орехом. Мусс Бавариус
+                            на основе пралине <br> верхний слой с шоколадом, пралине и орехом</p>
                     </div>
-                    <div class="text-wrapper">
-                        <div>
-                            <h3>МАДАГАСКАР</h3>
-                            <p> Бисквит шоколадный. Мусс Лакте. Бисквит. <br> С орехом. Мусс Бавариус
-                                на основе пралине <br> верхний слой с шоколадом, пралине и орехом</p>
-                        </div>
-                        <div>
-                            <h3>450 руб</h3>
-                        </div>
+                    <div>
+                        <h3>450 руб</h3>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="buttons">
-            <div class="first-button">
-                <table style="width: 100%; height: 100%;">
-                    <tbody>
-                    <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
-                    </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
-    <div class="five-product" style="margin-left: 100px;">
-        <div class="js-product-link" href="order">
-            <div class="five-content">
-                <div class="img" style="padding-bottom: 0;">
-                    <div class="second-img">
-                        <img src="img/лимон.png" width="400" height="450">
-                    </div>
-                    <div class="text-wrapper">
-                        <div>
-                            <h3>ЛИМОН</h3>
-                            <p> Бисквит на миндальной муке с цедрой лимона. <br>
-                                Мусс на основе белого бельгийского шоколада  <br> на цедре лимона. Начинка ананас лимон </p>
-                        </div>
-                        <div>
-                            <h3>370 руб</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="buttons">
-            <div class="first-button">
-                <table style="width: 100%; height: 100%;">
-                    <tbody>
-                    <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div class="six-product" style="margin-left: 100px;">
-        <div class="js-product-link" href="order">
-            <div class="six-content">
-                <div class="img" style="padding-bottom: 0;">
-                    <div class="six-img">
-                        <img src="img/мусс.png" width="400" height="450">
-                    </div>
-                    <div class="text-wrapper">
-                        <div>
-                            <h3>LM</h3>
-                            <p>  Мусс Бавариус, малина, хрустящая основа <br> покрыт велюром и монета из бельгийского <br> шоколада  </p>
-                        </div>
-                        <div>
-                            <h3>490 руб</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="buttons">
-            <div class="first-button">
-                <table style="width: 100%; height: 100%;">
-                    <tbody>
-                    <tr>
-                        <td><a href="#order" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="buttons">
+        <div class="first-button">
+            <table style="width: 100%; height: 100%;">
+                <tbody>
+                <tr>
+                    <td><a href="#order" onclick="updateTotal('Мадагаскар',450)" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+<div class="five-product" style="margin-left: 100px;">
+    <div class="js-product-link" href="order">
+        <div class="five-content">
+            <div class="img" style="padding-bottom: 0;">
+                <div class="second-img">
+                    <img src="img/лимон.png" width="400" height="450">
+                </div>
+                <div class="text-wrapper">
+                    <div>
+                        <h3>ЛИМОН</h3>
+                        <p> Бисквит на миндальной муке с цедрой лимона. <br>
+                            Мусс на основе белого бельгийского шоколада  <br> на цедре лимона. Начинка ананас лимон </p>
+                    </div>
+                    <div>
+                        <h3>370 руб</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="first-button">
+            <table style="width: 100%; height: 100%;">
+                <tbody>
+                <tr>
+                    <td><a href="#order"  onclick="updateTotal('Лимон',370)" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="six-product" style="margin-left: 100px;">
+    <div class="js-product-link" href="order">
+        <div class="six-content">
+            <div class="img" style="padding-bottom: 0;">
+                <div class="six-img">
+                    <img src="img/мусс.png" width="400" height="450">
+                </div>
+                <div class="text-wrapper">
+                    <div>
+                        <h3>LM</h3>
+                        <p>  Мусс Бавариус, малина, хрустящая основа <br> покрыт велюром и монета из бельгийского <br> шоколада  </p>
+                    </div>
+                    <div>
+                        <h3>490 руб</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="first-button">
+            <table style="width: 100%; height: 100%;">
+                <tbody>
+                <tr>
+                    <td><a href="#order" onclick="updateTotal('LM', 490)" style="background-color: #DAA07B; display: inline-block; width: 350px; height: 50px; text-align: center; color: #FFF; line-height: 50px; text-decoration: none;">В корзину</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="orderForm" class="modal">
+    <div class="form-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Оформление заказа</h2>
+        <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="delivery">Доставка:</label>
+            <select id="delivery" name="delivery">
+                <option value="самовывоз">Самовывоз</option>
+                <option value="курьер">Курьером</option>
+            </select>
+
+            <label for="total">Сумма заказа:</label>
+            <input type="text" id="total" name="total" value="0 руб" readonly>
+
+            <label for="items">Товары:</label>
+            <textarea id="items" name="items" readonly></textarea>
+
+            <input type="submit" value="Оформить заказ" style="background-color: #E06A8B;; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+        </form>
+    </div>
+</div>
+
+<script>
+    function openForm() {
+        document.getElementById("orderForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("orderForm").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById("orderForm");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function updateTotal(itemName, price) {
+        var totalInput = document.getElementById("total");
+        var itemsInput = document.getElementById("items");
+        var currentTotal = parseInt(totalInput.value.replace(/\D/g, ''));
+        var newTotal = currentTotal + price;
+        totalInput.value = newTotal + " руб";
+        itemsInput.value += itemName + "\n";
+        openForm();
+    }
+</script>
 
 <h1 style="color: #DAA07B; margin-top: 100px"> Наши акции: </h1>
 <div class="stocks" style="display: flex;">
-    <div class="first-stock" style=" margin-left: 50px">
-        <img class="first-stock" src="img/первая%20акция.png" width="400" height="450">
-    </div>
-    <div class="second-stock" style=" margin-left: 75px">
-        <img class="second-stock" src="img/вторая%20акция.png" width="400" height="450">
-    </div>
-    <div class="third-stock" style=" margin-left: 75px">
-        <img class="third-stock" src="img/третья.png" width="400" height="450">
-    </div>
+<div class="first-stock" style=" margin-left: 50px">
+    <img class="first-stock" src="img/первая%20акция.png" width="400" height="450">
+</div>
+<div class="second-stock" style=" margin-left: 75px">
+    <img class="second-stock" src="img/вторая%20акция.png" width="400" height="450">
+</div>
+<div class="third-stock" style=" margin-left: 75px">
+    <img class="third-stock" src="img/третья.png" width="400" height="450">
+</div>
 </div>
 <h2> LA MANINI </h2>
 <div class="heady" style="margin-top:25px">
-    <p>Moscow</p>
+<p>Moscow</p>
 </div>
 <div class="footer" style=" margin-top: 50px; align-items: center; text-align: center; margin-bottom: 50px">
-    <p>Часы работы:<br>
-        с 9:00 - 20:00<br><br>
+<p>Часы работы:<br>
+    с 9:00 - 20:00<br><br>
 
-        Заказы принимаются каждый день<br><br>
+    Заказы принимаются каждый день<br><br>
 
-        8 (999) 999-99-99<br><br>
-        © 2024 LAMANINI</p>
+    8 (999) 999-99-99<br><br>
+    © 2024 LAMANINI</p>
 </div>
 </body>
 </html>
