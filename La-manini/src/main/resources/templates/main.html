@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
 <h2> LA MANINI </h2>
@@ -16,7 +17,7 @@
 <h1> ДЕСЕРТЫ  ПРЕМИУМ КАЧЕСТВА</h1>
 
 <div class="centered-wrapper">
-    <img class="centreimg" src="img/главнаякартинка.jpg" alt="Главное изображение">
+    <img class="centreimg" src="../static/css/img/главнаякартинка.jpg" alt="Главное изображение">
 </div>
 <div class="centretext">
     <p>La Manini специализируется на создании десертов и тортов премиум сегмента</p>
@@ -30,7 +31,7 @@
         <br> </p>
     </div>
     <div class="rightimg">
-        <img src="img/женщина.jpg" alt="автор"  >
+        <img src="../static/css/img/женщина.jpg" alt="автор"  >
     </div>
 </div>
 
@@ -42,7 +43,7 @@
             <div class="first-content">
                 <div class="img" style="padding-bottom: 0;">
                     <div class="first-img">
-                        <img src="img/кофе.jpg" width="400" height="450">
+                        <img src="../static/css/img/кофе.jpg" width="400" height="450">
                     </div>
                     <div class="text-wrapper">
                         <div>
@@ -74,7 +75,7 @@
             <div class="second-content">
                 <div class="img" style="padding-bottom: 0;">
                     <div class="second-img">
-                        <img src="img/ваниль.png" width="400" height="450">
+                        <img src="../static/css/img/ваниль.png" width="400" height="450">
                     </div>
                     <div class="text-wrapper">
                         <div>
@@ -107,7 +108,7 @@
             <div class="third-content">
                 <div class="img" style="padding-bottom: 0;">
                     <div class="third-img">
-                        <img src="img/роза.png" width="400" height="450">
+                        <img src="../static/css/img/роза.png" width="400" height="450">
                     </div>
                     <div class="text-wrapper">
                         <div>
@@ -142,7 +143,7 @@
         <div class="fourth-content">
             <div class="img" style="padding-bottom: 0;">
                 <div class="fourth-img">
-                    <img src="img/мадагаскар.png" width="400" height="450">
+                    <img src="../static/css/img/мадагаскар.png" width="400" height="450">
                 </div>
                 <div class="text-wrapper">
                     <div>
@@ -174,7 +175,7 @@
         <div class="five-content">
             <div class="img" style="padding-bottom: 0;">
                 <div class="second-img">
-                    <img src="img/лимон.png" width="400" height="450">
+                    <img src="../static/css/img/лимон.png" width="400" height="450">
                 </div>
                 <div class="text-wrapper">
                     <div>
@@ -207,7 +208,7 @@
         <div class="six-content">
             <div class="img" style="padding-bottom: 0;">
                 <div class="six-img">
-                    <img src="img/мусс.png" width="400" height="450">
+                    <img src="../static/css/img/мусс.png" width="400" height="450">
                 </div>
                 <div class="text-wrapper">
                     <div>
@@ -239,7 +240,7 @@
     <div class="form-content">
         <span class="close" onclick="closeForm()">&times;</span>
         <h2>Оформление заказа</h2>
-        <form>
+        <form method="post" action="/order">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
 
@@ -293,13 +294,13 @@
 <h1 style="color: #DAA07B; margin-top: 100px"> Наши акции: </h1>
 <div class="stocks" style="display: flex;">
 <div class="first-stock" style=" margin-left: 50px">
-    <img class="first-stock" src="img/первая%20акция.png" width="400" height="450">
+    <img class="first-stock" src="../static/css/img/первая%20акция.png" width="400" height="450">
 </div>
 <div class="second-stock" style=" margin-left: 75px">
-    <img class="second-stock" src="img/вторая%20акция.png" width="400" height="450">
+    <img class="second-stock" src="../static/css/img/вторая%20акция.png" width="400" height="450">
 </div>
 <div class="third-stock" style=" margin-left: 75px">
-    <img class="third-stock" src="img/третья.png" width="400" height="450">
+    <img class="third-stock" src="../static/css/img/третья.png" width="400" height="450">
 </div>
 </div>
 <h2> LA MANINI </h2>
