@@ -38,23 +38,41 @@ public class Purchase {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        // Валидация номера телефона (только цифры и знак +)
+        if (phone.matches("^\\+?\\d+$")) {
+            this.phone = phone;
+        } else {
+            // Обработка некорректного номера телефона
+        }
     }
-
     public String getDelivery() {
         return delivery;
     }
 
     public void setDelivery(String delivery) {
-        this.delivery = delivery;
+        // Валидация способа доставки (только "самовывоз" или "курьер")
+        if (delivery.equals("самовывоз") || delivery.equals("курьер")) {
+            this.delivery = delivery;
+        } else {
+            // Обработка некорректного способа доставки
+        }
     }
 
     public int getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
+    public void setTotal(String totalString) {
+        if (totalString != null && !totalString.isEmpty()) {
+            String[] parts = totalString.split(" ");
+            if (parts.length > 0) {
+                try {
+                    this.total = Integer.parseInt(parts[0]);
+                } catch (NumberFormatException e) {
+                    // Обработка исключения, если первая часть не является числом
+                }
+            }
+        }
     }
 
     public String getItems() {

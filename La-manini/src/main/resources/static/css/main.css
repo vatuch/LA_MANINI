@@ -14,7 +14,7 @@ text-align: center;
 h1{
 color: #D33160;
 font-family: 'Journalism';
-font-size: 85px;
+font-size: 100px;
 margin-top: 75px;
 text-align: center;
 }
@@ -103,11 +103,33 @@ font-weight:400;}
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-
 .form-content {
     background-color: #fefefe;
-        margin: 15% auto; /* 15% отступ сверху и снизу, центрировать по горизонтали */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 30%;
+    margin: 15% auto; /* 15% отступ сверху и снизу, центрировать по горизонтали */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.form-content input {
+    margin-bottom: 10px; /* Добавляет отступ снизу для каждого поля */
+    font-family: inherit
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row > * {
+    margin-right: 10px;
 }

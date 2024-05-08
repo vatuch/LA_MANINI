@@ -5,3 +5,13 @@ LLa-manini/src/test/java/com/lamanini/La/manini/LaManiniApplicationTests.java,2
 NLa-manini/src/main/java/com/lamanini/La/manini/Controllers/SiteController.java,f\a\fa366fdabe397c7d214385bfa4856041146a85cf
 w
 GLa-manini/src/main/java/com/lamanini/La/manini/LaManiniApplication.java,2\6\26e5075e83dd06c701282764696e430b21925de5
+`
+0La-manini/src/main/resources/templates/main.html,3\f\3f815cebd2f8c0259bbeeba54b34042dfeeb93bc
+A
+La-manini/pom.xml,d\c\dcd971ea969088caedf9c94d2e765d4034d79e69
+ƒ
+SLa-manini/src/main/java/com/lamanini/La/manini/reposetories/PurchaseRepository.java,d\f\df0a4807bac78bf4ea5cdf684a956797829cbf9e
+s
+CLa-manini/src/main/java/com/lamanini/La/manini/models/Purchase.java,4\0\406229960c5fef14c0e1ab226b8ce03163fffbff
+`
+0La-manini/src/main/resources/static/css/main.css,b\b\bbc3a62a690826695b2ba91b5bf66878f28a1a89

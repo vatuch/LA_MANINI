@@ -18,13 +18,12 @@ import org.springframework.core.io.Resource;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+
 @ComponentScan()
 @Controller
 
 public class SiteController {
 
-    @Autowired
-    private PurchaseRepository purchaseRepository;
 
     @GetMapping ("/")
     public String main(Model model) {
@@ -44,21 +43,25 @@ public class SiteController {
         return css;
     }
 
+
+    @Autowired
+    private PurchaseRepository purchaseRepository;
+
     @PostMapping("/purchase")
     public String createPurchase (@RequestParam("name") String name,
                               @RequestParam("phone") String phone,
                               @RequestParam("delivery") String delivery,
-                              @RequestParam("total") int total,
+                              @RequestParam("total") String totalString,
                               @RequestParam("items") String items) {
         Purchase purchase = new Purchase();
         purchase.setName(name);
         purchase.setPhone(phone);
         purchase.setDelivery(delivery);
-        purchase.setTotal(total);
+        purchase.setTotal(totalString);
         purchase.setItems(items);
         purchaseRepository.save(purchase);
 
-        return "redirect:/success";
+        return "responce_order";
     }
 
 }
