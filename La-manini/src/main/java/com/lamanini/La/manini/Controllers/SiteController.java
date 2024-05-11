@@ -1,7 +1,9 @@
 package com.lamanini.La.manini.Controllers;
 
 
+import com.lamanini.La.manini.models.Individual_purchase;
 import com.lamanini.La.manini.models.Purchase;
+import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
 import com.lamanini.La.manini.reposetories.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,7 +21,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
 
-@ComponentScan()
 @Controller
 
 public class SiteController {
@@ -77,5 +78,19 @@ public class SiteController {
         return "responce_order";
     }
 
+    @Autowired
+    private Individual_purchaseRepository individualPurchaseRepository;
 
+    @PostMapping("/individual_purchase")
+    public String createIndividual_purchase (@RequestParam("name") String name,
+                                  @RequestParam("phone") String phone,
+                                  @RequestParam("wishes") String wishes){
+
+        Individual_purchase individual_purchase = new Individual_purchase();
+        individual_purchase.setName(name);
+        individual_purchase.setPhone(phone);
+        individual_purchase.setWishes(wishes);
+        individualPurchaseRepository.save(individual_purchase);
+        return "responce_order";
+    }
 }

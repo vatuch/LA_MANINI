@@ -1,8 +1,14 @@
 
+˜	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8¼ÍäÃö1J$72adfd10-b796-45a7-beab-df766afd4f7b
 £
-java:S14887"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8ŠßíÁö1J$ac0579fd-fc4d-4380-b680-72b0e504370d
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8¯Êø¤ó1J$6ce1e248-1c63-4416-a958-029a153a4bef
+java:S14888"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8½ÍäÃö1J$cb467306-d1f6-46cb-8126-028f22d33b9f
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8¿ÍäÃö1J$76e6099b-ddf7-47c4-802d-b0fdc2a4177c
 ­
-java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8›ßíÁö1J$e43bf12d-b544-4c47-ae8a-fb45d735ae74
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8ÎÍäÃö1J$e05a4f0b-b12b-48fe-9b4a-6edc8ddcb969
 …
-java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞ8·ˆÎ¥ó1J$3e408af3-1765-4286-b243-a5c0c1462977
+java:S6813="BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞÍäÃö1J$f6bae941-371e-4e84-bd9b-885301fdd77d
+…
+java:S6813Q"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞÍäÃö1J$69401d29-dac3-49f9-8bc2-0186c16a4e58
+o	java:S100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8èåûÃö1
+™
+java:S1128	"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8öºòÃö1J$2567e55a-da7d-4f34-bcfc-38c2705eb26a

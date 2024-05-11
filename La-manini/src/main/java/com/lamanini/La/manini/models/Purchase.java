@@ -38,11 +38,8 @@ public class Purchase {
     }
 
     public void setPhone(String phone) {
-        // Валидация номера телефона (только цифры и знак +)
         if (phone.matches("^\\+?\\d+$")) {
             this.phone = phone;
-        } else {
-            // Обработка некорректного номера телефона
         }
     }
     public String getDelivery() {
@@ -50,11 +47,8 @@ public class Purchase {
     }
 
     public void setDelivery(String delivery) {
-        // Валидация способа доставки (только "самовывоз" или "курьер")
         if (delivery.equals("самовывоз") || delivery.equals("курьер")) {
             this.delivery = delivery;
-        } else {
-            // Обработка некорректного способа доставки
         }
     }
 

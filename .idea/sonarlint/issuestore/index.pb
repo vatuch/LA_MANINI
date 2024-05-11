@@ -15,3 +15,7 @@ s
 CLa-manini/src/main/java/com/lamanini/La/manini/models/Purchase.java,4\0\406229960c5fef14c0e1ab226b8ce03163fffbff
 `
 0La-manini/src/main/resources/static/css/main.css,b\b\bbc3a62a690826695b2ba91b5bf66878f28a1a89
+~
+NLa-manini/src/main/java/com/lamanini/La/manini/models/Individual_purchase.java,d\b\dba169c2287b3beb8e759f2dfb2da141b2a59d4e
+Ž
+^La-manini/src/main/java/com/lamanini/La/manini/reposetories/Individual_purchaseRepository.java,7\7\7737ab776b9a7e1e15b457aeb00c862c24874760

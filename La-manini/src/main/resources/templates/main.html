@@ -300,6 +300,63 @@
 
 </script>
 
+<style>
+
+    form {
+      font-family: 'Gilroy', sans-serif;
+      margin: 0 auto;
+      text-align: center
+    }
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 50%;
+      font-family: 'Gilroy', sans-serif;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: medium;
+  }
+
+    button[type="submit"] {
+    width: 50%;
+    height: 50px;
+    background-color: #D33160;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: medium;
+  }
+</style>
+
+<h1 style="margin-top: 100px"> Или оставьте заявку на изготовление индивидуального рассказа: </h1>
+<form action="/individual_purchase" method="post">
+    <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name_first" name="name" required><br>
+    </div>
+
+    <div>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone_first" name="phone" required><br>
+    </div>
+
+    <div>
+        <label for="wishes">Расскажите, что Вы хотите:</label>
+        <textarea id="wishes" name="wishes"></textarea><br>
+    </div>
+    <button type="submit">Отправить</button>
+</form>
+
 <h1 style="color: #DAA07B; margin-top: 100px"> Наши акции: </h1>
 <div class="stocks" style="display: flex;">
 <div class="first-stock" style=" margin-left: 50px">
