@@ -133,3 +133,13 @@ font-weight:400;}
 .form-row > * {
     margin-right: 10px;
 }
+
+.image-container {
+    text-align: center;
+}
+
+.responseimg {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}

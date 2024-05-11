@@ -6,17 +6,17 @@ import com.lamanini.La.manini.reposetories.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.core.io.Resource;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 
 @ComponentScan()
@@ -24,6 +24,14 @@ import java.nio.charset.StandardCharsets;
 
 public class SiteController {
 
+    @GetMapping("/img/{imageName}")
+    public ResponseEntity<Resource> serveImage(@PathVariable String imageName) throws IOException {
+        Resource resource = new ClassPathResource("static/css/img/" + imageName);
+        return ResponseEntity
+                .ok()
+                .contentType(MediaType.parseMediaType(Files.probeContentType(resource.getFile().toPath())))
+                .body(resource);
+    }
 
     @GetMapping ("/")
     public String main(Model model) {
@@ -33,6 +41,11 @@ public class SiteController {
     @GetMapping("/main")
     public String mainPage() {
         return "main";
+    }
+
+    @GetMapping("/response")
+    public String responsePage() {
+        return "response";
     }
 
     @GetMapping(value = "/css/main.css")
@@ -63,5 +76,6 @@ public class SiteController {
 
         return "responce_order";
     }
+
 
 }

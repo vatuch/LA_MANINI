@@ -1,8 +1,8 @@
 
 £
-java:S1488*"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8­Êø¤ó1J$6f003c66-760d-40cc-8908-215cd80cb5a6
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8¯Êø¤ó1J$8867189e-fc5a-43df-a37d-a35b7db2bc44
+java:S14887"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8ŠßíÁö1J$ac0579fd-fc4d-4380-b680-72b0e504370d
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8¯Êø¤ó1J$6ce1e248-1c63-4416-a958-029a153a4bef
 ­
-java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8·Êø¤ó1J$09dd3e31-48ac-4816-b208-3e5bdab08c8f
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8›ßíÁö1J$e43bf12d-b544-4c47-ae8a-fb45d735ae74
 …
-java:S6813/"BRemove this field injection and use constructor injection instead.(êæÄŞ8·ˆÎ¥ó1J$119a457d-aa15-4ba2-af5b-26c129918a49
+java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞ8·ˆÎ¥ó1J$3e408af3-1765-4286-b243-a5c0c1462977
