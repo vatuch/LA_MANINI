@@ -19,3 +19,5 @@ CLa-manini/src/main/java/com/lamanini/La/manini/models/Purchase.java,4\0\406229
 NLa-manini/src/main/java/com/lamanini/La/manini/models/Individual_purchase.java,d\b\dba169c2287b3beb8e759f2dfb2da141b2a59d4e
 Ž
 ^La-manini/src/main/java/com/lamanini/La/manini/reposetories/Individual_purchaseRepository.java,7\7\7737ab776b9a7e1e15b457aeb00c862c24874760
+~
+NLa-manini/src/main/java/com/lamanini/La/manini/service/TelegramBotService.java,d\1\d1f21197ef5040fe8a2aff71960b520d763b51df

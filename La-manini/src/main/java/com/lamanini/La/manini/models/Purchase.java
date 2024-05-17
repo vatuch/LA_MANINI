@@ -63,7 +63,6 @@ public class Purchase {
                 try {
                     this.total = Integer.parseInt(parts[0]);
                 } catch (NumberFormatException e) {
-                    // Обработка исключения, если первая часть не является числом
                 }
             }
         }

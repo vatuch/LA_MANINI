@@ -5,6 +5,7 @@ import com.lamanini.La.manini.models.Individual_purchase;
 import com.lamanini.La.manini.models.Purchase;
 import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
 import com.lamanini.La.manini.reposetories.PurchaseRepository;
+import com.lamanini.La.manini.service.TelegramBotService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.ClassPathResource;
@@ -15,15 +16,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.core.io.Resource;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 
 
 @Controller
-
 public class SiteController {
+
+    private final TelegramBotService telegramBotService;
+    private final PurchaseRepository purchaseRepository;
+    private final Individual_purchaseRepository individualPurchaseRepository;
+
+    @Autowired
+    public SiteController(TelegramBotService telegramBotService, PurchaseRepository purchaseRepository, Individual_purchaseRepository individualPurchaseRepository) {
+        this.telegramBotService = telegramBotService;
+        this.purchaseRepository = purchaseRepository;
+        this.individualPurchaseRepository = individualPurchaseRepository;
+    }
 
     @GetMapping("/img/{imageName}")
     public ResponseEntity<Resource> serveImage(@PathVariable String imageName) throws IOException {
@@ -58,9 +68,6 @@ public class SiteController {
     }
 
 
-    @Autowired
-    private PurchaseRepository purchaseRepository;
-
     @PostMapping("/purchase")
     public String createPurchase (@RequestParam("name") String name,
                               @RequestParam("phone") String phone,
@@ -74,12 +81,9 @@ public class SiteController {
         purchase.setTotal(totalString);
         purchase.setItems(items);
         purchaseRepository.save(purchase);
-
+        telegramBotService.sendPurchaseMessage(purchase);
         return "responce_order";
     }
-
-    @Autowired
-    private Individual_purchaseRepository individualPurchaseRepository;
 
     @PostMapping("/individual_purchase")
     public String createIndividual_purchase (@RequestParam("name") String name,
@@ -91,6 +95,7 @@ public class SiteController {
         individual_purchase.setPhone(phone);
         individual_purchase.setWishes(wishes);
         individualPurchaseRepository.save(individual_purchase);
+        telegramBotService.sendIndividualPurchaseMessage(individual_purchase);
         return "responce_order";
     }
 }
