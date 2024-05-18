@@ -6,6 +6,7 @@ import com.lamanini.La.manini.models.Purchase;
 import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
 import com.lamanini.La.manini.reposetories.PurchaseRepository;
 import com.lamanini.La.manini.service.TelegramBotService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.ClassPathResource;
