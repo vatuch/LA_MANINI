@@ -13,11 +13,13 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 @Component
 public class TelegramBotService extends TelegramLongPollingBot {
 
+
     @Value("${telegram.bot.token}")
     private String botToken;
 
     @Value("${telegram.bot.userName}")
     private String userName;
+
 
     @Override
     public String getBotUsername() {
@@ -36,7 +38,7 @@ public class TelegramBotService extends TelegramLongPollingBot {
                 "Доставка: " + purchase.getDelivery() + "\n" +
                 "Сумма: " + purchase.getTotal() + "\n" +
                 "Товары: " + purchase.getItems();
-        sendMessage(message);
+        sendMessage("@vatuch", message);
     }
 
     @Override
@@ -48,15 +50,17 @@ public class TelegramBotService extends TelegramLongPollingBot {
                 "Имя: " + individual_purchase.getName() + "\n" +
                 "Телефон: " + individual_purchase.getPhone() + "\n" +
                 "Пожелания: " + individual_purchase.getWishes();
-        sendMessage(message);
+        sendMessage("@vatuch", message);
     }
 
-    private void sendMessage(String message) {
-        SendMessage request = new SendMessage(userName, message);
+    private void sendMessage(String chatId, String message) {
+        SendMessage request = new SendMessage(chatId, message);
         try {
             execute(request);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
     }
+
+
 }

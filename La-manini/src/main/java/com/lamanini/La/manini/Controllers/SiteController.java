@@ -6,6 +6,7 @@ import com.lamanini.La.manini.models.Purchase;
 import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
 import com.lamanini.La.manini.reposetories.PurchaseRepository;
 import com.lamanini.La.manini.service.TelegramBotService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.ClassPathResource;
@@ -70,10 +71,10 @@ public class SiteController {
 
     @PostMapping("/purchase")
     public String createPurchase (@RequestParam("name") String name,
-                              @RequestParam("phone") String phone,
-                              @RequestParam("delivery") String delivery,
-                              @RequestParam("total") String totalString,
-                              @RequestParam("items") String items) {
+                                  @RequestParam("phone") String phone,
+                                  @RequestParam("delivery") String delivery,
+                                  @RequestParam("total") String totalString,
+                                  @RequestParam("items") String items) {
         Purchase purchase = new Purchase();
         purchase.setName(name);
         purchase.setPhone(phone);
@@ -87,8 +88,8 @@ public class SiteController {
 
     @PostMapping("/individual_purchase")
     public String createIndividual_purchase (@RequestParam("name") String name,
-                                  @RequestParam("phone") String phone,
-                                  @RequestParam("wishes") String wishes){
+                                             @RequestParam("phone") String phone,
+                                             @RequestParam("wishes") String wishes){
 
         Individual_purchase individual_purchase = new Individual_purchase();
         individual_purchase.setName(name);
@@ -96,6 +97,13 @@ public class SiteController {
         individual_purchase.setWishes(wishes);
         individualPurchaseRepository.save(individual_purchase);
         telegramBotService.sendIndividualPurchaseMessage(individual_purchase);
+        return "responce_order";
+    }
+
+    @PostMapping("/create-purchase")
+    public String createPurchase(@ModelAttribute Purchase purchase) {
+        Purchase savedPurchase = purchaseRepository.save(purchase);
+        telegramBotService.sendPurchaseMessage(savedPurchase);
         return "responce_order";
     }
 }

@@ -21,3 +21,5 @@ NLa-manini/src/main/java/com/lamanini/La/manini/models/Individual_purchase.java
 ^La-manini/src/main/java/com/lamanini/La/manini/reposetories/Individual_purchaseRepository.java,7\7\7737ab776b9a7e1e15b457aeb00c862c24874760
 ~
 NLa-manini/src/main/java/com/lamanini/La/manini/service/TelegramBotService.java,d\1\d1f21197ef5040fe8a2aff71960b520d763b51df
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

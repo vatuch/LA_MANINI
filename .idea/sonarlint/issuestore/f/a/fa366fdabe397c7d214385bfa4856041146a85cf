@@ -1,11 +1,10 @@
 
-˜	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8¼ÍäÃö1J$302b5171-86cc-4ab1-a649-d29dcceae686
-£
-java:S1488B"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8½ÍäÃö1J$378fa4e3-04fb-433e-8848-bcfa60bb5174
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8¿ÍäÃö1J$1bd20560-0eb4-43f8-b060-3f30b09a9e4f
-­
-java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8ÎÍäÃö1J$2142fe95-1a8a-4cde-b668-3b295f9a9f4a
-•	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8èåûÃö1J$b508edaa-dad7-4ec1-9426-fd36f138894d
-™
-java:S1128
-"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8¬ê¢Æö1J$49c077c8-533e-4eb0-badb-47152ac98382
+q
+java:S1192V"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8ïÃäşù1
+r	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8ïÃäşù1
+}
+java:S1488C"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8ïÃäşù1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8ïÃäşù1
+‡
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8‘Ääşù1
+o	java:S100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8Ääşù1
