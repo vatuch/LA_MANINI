@@ -3,9 +3,12 @@ package com.lamanini.La.manini.Controllers;
 
 import com.lamanini.La.manini.models.Individual_purchase;
 import com.lamanini.La.manini.models.Purchase;
+import com.lamanini.La.manini.models.User;
 import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
 import com.lamanini.La.manini.reposetories.PurchaseRepository;
+import com.lamanini.La.manini.reposetories.UserRepository;
 import com.lamanini.La.manini.service.TelegramBotService;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -28,12 +31,14 @@ public class SiteController {
     private final TelegramBotService telegramBotService;
     private final PurchaseRepository purchaseRepository;
     private final Individual_purchaseRepository individualPurchaseRepository;
+    private final UserRepository userRepository;
 
     @Autowired
-    public SiteController(TelegramBotService telegramBotService, PurchaseRepository purchaseRepository, Individual_purchaseRepository individualPurchaseRepository) {
+    public SiteController(TelegramBotService telegramBotService, PurchaseRepository purchaseRepository, Individual_purchaseRepository individualPurchaseRepository, UserRepository userRepository) {
         this.telegramBotService = telegramBotService;
         this.purchaseRepository = purchaseRepository;
         this.individualPurchaseRepository = individualPurchaseRepository;
+        this.userRepository = userRepository;
     }
 
     @GetMapping("/img/{imageName}")
@@ -51,10 +56,15 @@ public class SiteController {
         return "main";}
 
     @GetMapping("/main")
-    public String mainPage() {
-        return "main";
+    public String mainPage(Model model, HttpSession session) {
+        User loggedInUser = (User) session.getAttribute("loggedInUser");
+        if (loggedInUser != null) {
+            model.addAttribute("name", loggedInUser.getName());
+            return "main";
+        } else {
+            return "redirect:/login";
+        }
     }
-
     @GetMapping("/response")
     public String responsePage() {
         return "response";
@@ -105,5 +115,41 @@ public class SiteController {
         Purchase savedPurchase = purchaseRepository.save(purchase);
         telegramBotService.sendPurchaseMessage(savedPurchase);
         return "responce_order";
+    }
+
+    @GetMapping("/register")
+    public String showRegistrationForm(Model model) {
+        model.addAttribute("user", new User());
+        return "register";
+    }
+
+    @PostMapping("/register")
+    public String registerUser(@ModelAttribute("user") User user) {
+        userRepository.save(user);
+        return "redirect:/login";
+    }
+
+    @GetMapping("/login")
+    public String showLoginForm(Model model) {
+        model.addAttribute("user", new User());
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String loginUser(@ModelAttribute("user") User user, Model model, HttpSession session) {
+        User savedUser = userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword());
+        if (savedUser != null) {
+            session.setAttribute("loggedInUser", savedUser);
+            return "redirect:/";
+        } else {
+            model.addAttribute("error", "Invalid email or password");
+            return "login";
+        }
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/";
     }
 }

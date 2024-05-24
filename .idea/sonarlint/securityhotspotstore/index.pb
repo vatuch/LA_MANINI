@@ -23,3 +23,13 @@ NLa-manini/src/main/java/com/lamanini/La/manini/models/Individual_purchase.java
 NLa-manini/src/main/java/com/lamanini/La/manini/service/TelegramBotService.java,d\1\d1f21197ef5040fe8a2aff71960b520d763b51df
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+o
+?La-manini/src/main/java/com/lamanini/La/manini/models/User.java,3\c\3ce6b63e4bbcae1e1b45bc3a2cd45537461895b4
+
+OLa-manini/src/main/java/com/lamanini/La/manini/reposetories/UserRepository.java,9\3\93dd99609677390dcd7666a4a365c075c0fd7133
+w
+GLa-manini/src/main/java/com/lamanini/La/manini/service/UserService.java,c\4\c4dce2dccb2736f2f7e8045f8de8ef046a0121be
+~
+NLa-manini/src/main/java/com/lamanini/La/manini/Controllers/AuthController.java,b\b\bb3dacceb46793304a9951bbdad9d1afa984357d
+…
+ULa-manini/src/main/java/com/lamanini/La/manini/Controllers/SecurityConfiguration.java,5\c\5c814bdbf3e5e9520709692108b5cbc450f13d03
