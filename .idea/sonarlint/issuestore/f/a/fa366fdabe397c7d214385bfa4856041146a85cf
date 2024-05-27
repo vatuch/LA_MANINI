@@ -1,16 +1,14 @@
 
-q
-java:S1192`"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8¦Ç–Öú1
-r	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8§Ç–Öú1
-}
-java:S1488M"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8§Ç–Öú1
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8©Ç–Öú1
-‡
-java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8ÄÇ–Öú1
-o	java:S100d"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8ĞÇ–Öú1
-X
-java:S2441":Make "User" serializable or don't store it in the session.(ïÔê™8ÕÇ–Öú1
-]
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ÖÇ–Öú1
-s
-java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8×Ç–Öú1
+—
+java:S1192b"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8šæÌû1J$260de951-6870-432c-b403-5b3305fc5110
+˜	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8›æÌû1J$e1013c86-8029-4d69-a2fa-362d435b27b6
+£
+java:S1488O"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8›æÌû1J$d9abbcef-866a-43b3-a1e3-b55571fe87a8
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8œæÌû1J$4c2933db-7ff2-4ce8-9075-802c99eb2475
+­
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8µæÌû1J$a80fe51d-6004-49ba-9d9c-e1b204c8fa03
+•	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8½æÌû1J$fbbd1e32-f010-460f-a5f9-f6d4ba6e701f
+›
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ïñæÌû1J$be3c46be-39cf-4337-a15c-50bfd8fdd226
+™
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8ïñæÌû1J$f39131c2-a5c9-4aba-8c7b-30c71855a2a4

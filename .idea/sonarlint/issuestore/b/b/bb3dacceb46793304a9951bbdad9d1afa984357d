@@ -1,8 +1,8 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8ËˆÕú1J$e2f34eeb-06fe-483b-8659-4484bb3c0609
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8àÕ´Íû1J$2f028ede-eb28-4fb7-b1b0-af8cdb5f9682
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ØˆÕú1J$527c93c5-2075-4a22-bcb9-e82398ee6adb
-}
-java:S2441-":Make "User" serializable or don't store it in the session.(ïÔê™8ßˆÕú1J$77d163d0-c856-4f9c-bf25-3a75013123cd
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8íÕ´Íû1J$430ea21e-47cd-476e-8653-ff035f350f1f
 
-java:S1128"<Remove this unused import 'ch.qos.logback.core.model.Model'.(·—ğœ8¼¡Õú1J$821f4be4-4005-47bb-bc10-0cadfd006619
+java:S1128"<Remove this unused import 'ch.qos.logback.core.model.Model'.(·—ğœ8¤”µÍû1J$9c58009d-637f-4eb2-9cd6-d90d769dd7df
+y
+java:S1128"6Remove this unused import 'lombok.extern.slf4j.Slf4j'.(ûúÄ®8¤”µÍû1J$8bf2b54e-2a42-490e-96fc-2586f2b14394

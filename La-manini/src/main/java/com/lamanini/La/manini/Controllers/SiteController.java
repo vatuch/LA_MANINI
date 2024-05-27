@@ -10,11 +10,14 @@ import com.lamanini.La.manini.reposetories.UserRepository;
 import com.lamanini.La.manini.service.TelegramBotService;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
@@ -26,20 +29,16 @@ import java.nio.file.Files;
 
 
 @Controller
+@RequiredArgsConstructor
 public class SiteController {
 
+    private static final Logger log = LoggerFactory.getLogger(SiteController.class);
     private final TelegramBotService telegramBotService;
     private final PurchaseRepository purchaseRepository;
     private final Individual_purchaseRepository individualPurchaseRepository;
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    @Autowired
-    public SiteController(TelegramBotService telegramBotService, PurchaseRepository purchaseRepository, Individual_purchaseRepository individualPurchaseRepository, UserRepository userRepository) {
-        this.telegramBotService = telegramBotService;
-        this.purchaseRepository = purchaseRepository;
-        this.individualPurchaseRepository = individualPurchaseRepository;
-        this.userRepository = userRepository;
-    }
 
     @GetMapping("/img/{imageName}")
     public ResponseEntity<Resource> serveImage(@PathVariable String imageName) throws IOException {
@@ -57,7 +56,10 @@ public class SiteController {
 
     @GetMapping("/main")
     public String mainPage(Model model, HttpSession session) {
+        log.info("redirect to main");
         User loggedInUser = (User) session.getAttribute("loggedInUser");
+        log.info("{}",session.getAttributeNames());
+        log.info("is logged in user? {}", loggedInUser);
         if (loggedInUser != null) {
             model.addAttribute("name", loggedInUser.getName());
             return "main";
@@ -125,6 +127,9 @@ public class SiteController {
 
     @PostMapping("/register")
     public String registerUser(@ModelAttribute("user") User user) {
+        String userPassword = user.getPassword();
+        userPassword = passwordEncoder.encode(userPassword);
+        user.setPassword(userPassword);
         userRepository.save(user);
         return "redirect:/login";
     }
@@ -137,10 +142,13 @@ public class SiteController {
 
     @PostMapping("/login")
     public String loginUser(@ModelAttribute("user") User user, Model model, HttpSession session) {
-        User savedUser = userRepository.findByEmailAndPassword(user.getEmail(), user.getPassword());
+        log.info("Get user {}", user);
+        log.info("Get model {}", model);
+        String encodedPassword = passwordEncoder.encode(user.getPassword());
+        User savedUser = userRepository.findByEmailAndPassword(user.getEmail(), encodedPassword);
         if (savedUser != null) {
             session.setAttribute("loggedInUser", savedUser);
-            return "redirect:/";
+            return "redirect:/main";
         } else {
             model.addAttribute("error", "Invalid email or password");
             return "login";

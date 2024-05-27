@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Войдите в свой кабинет или создайте его сейчас</h1>
-<form th:action="@{/login}" th:object="${user}" method="post">
+<form th:action="@{/doLogin}" th:object="${user}" method="post">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" th:field="*{email}" placeholder="Your email.." required>
 
