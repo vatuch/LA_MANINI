@@ -33,3 +33,7 @@ GLa-manini/src/main/java/com/lamanini/La/manini/service/UserService.java,c\4\c4
 NLa-manini/src/main/java/com/lamanini/La/manini/Controllers/AuthController.java,b\b\bb3dacceb46793304a9951bbdad9d1afa984357d
 …
 ULa-manini/src/main/java/com/lamanini/La/manini/Controllers/SecurityConfiguration.java,5\c\5c814bdbf3e5e9520709692108b5cbc450f13d03
+w
+GLa-manini/src/main/java/com/lamanini/La/manini/service/AuthManager.java,1\8\1819804d8aea8db0f5f93c0d4223a6cb0695bd94
+x
+HLa-manini/src/main/java/com/lamanini/La/manini/service/AuthProvider.java,3\4\34609a2d3ea028ef317ea45cfe7b843bd7359153

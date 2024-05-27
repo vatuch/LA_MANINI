@@ -1,8 +1,9 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8ğ²Îû1J$733b2cc1-fd21-4096-89aa-260d22b257ef
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8÷ÚÓÒû1J$dcb9838f-22aa-4df6-bc72-7ec962c0d971
 u
-java:S1611"2Remove the parentheses around the "auth" parameter(ûñŠé8û²Îû1J$7e6efeff-f4bc-443b-b938-b4842cfee80c
+java:S1611$"2Remove the parentheses around the "auth" parameter(ûñŠé8şÚÓÒû1J$ff3284dc-066c-40ee-be29-c6a5e8901e6c
+ƒ	java:S125-"<This block of commented-out lines of code should be removed.(õ¿ü¢ıÿÿÿÿ8€ÛÓÒû1J$812bbc63-0c84-4e10-b5b1-ba8519a31147
 ’
-java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8ş²Îû1J$2d2c5a27-365f-4ee8-9cc9-a3085a23860d
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8€Ó™Óû1J$c90e931e-e739-4573-8908-3905c00b30c2
 p
-java:S1128"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8ÿ²Îû1J$932481e5-97a2-4d0e-9842-14cbe9947fdd
+java:S1128"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8€Ó™Óû1J$12c9c010-25ba-410b-9d27-4c9c13f2ae1c

@@ -49,10 +49,17 @@ public class SiteController {
                 .body(resource);
     }
 
+    @PostMapping("/")
+    public String postMain(Model model){
+        model.addAttribute("title", "Главная страница");
+        return "main";
+    }
+
     @GetMapping ("/")
     public String main(Model model) {
         model.addAttribute("title", "Главная страница");
-        return "main";}
+        return "main";
+    }
 
     @GetMapping("/main")
     public String mainPage(Model model, HttpSession session) {
@@ -144,15 +151,21 @@ public class SiteController {
     public String loginUser(@ModelAttribute("user") User user, Model model, HttpSession session) {
         log.info("Get user {}", user);
         log.info("Get model {}", model);
-        String encodedPassword = passwordEncoder.encode(user.getPassword());
-        User savedUser = userRepository.findByEmailAndPassword(user.getEmail(), encodedPassword);
-        if (savedUser != null) {
-            session.setAttribute("loggedInUser", savedUser);
-            return "redirect:/main";
-        } else {
+        User savedUser = userRepository.findByEmail(user.getEmail());
+
+        if(savedUser == null){
             model.addAttribute("error", "Invalid email or password");
             return "login";
         }
+
+        if(!passwordEncoder.matches(user.getPassword(), savedUser.getPassword())){
+            model.addAttribute("error", "Invalid email or password");
+            return "login";
+        }
+
+        log.info("User correct");
+        session.setAttribute("loggedInUser", savedUser);
+        return "redirect:/main";
     }
 
     @GetMapping("/logout")

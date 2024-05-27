@@ -1,14 +1,18 @@
 
 —
-java:S1192b"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8šæÌû1J$260de951-6870-432c-b403-5b3305fc5110
-˜	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8›æÌû1J$e1013c86-8029-4d69-a2fa-362d435b27b6
+java:S1192i"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8ÀçœÓû1J$bdab5796-12b8-4032-a033-de03987fe349
+Š
+java:S1192“"FDefine a constant instead of duplicating this literal "login" 3 times.(Íı‡Ç8ÀçœÓû1J$fff5267c-9367-4adf-abe6-598158371d92
+˜	java:S117q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8ÁçœÓû1J$99341992-1db0-4179-9455-02f32b07382c
 £
-java:S1488O"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8›æÌû1J$d9abbcef-866a-43b3-a1e3-b55571fe87a8
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8œæÌû1J$4c2933db-7ff2-4ce8-9075-802c99eb2475
+java:S1488V"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8ÂçœÓû1J$8644bc46-ff0d-4403-ab18-e22f5dfca432
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8ÅçœÓû1J$3658e74f-510d-4660-8e37-6e12cdb3902f
 ­
-java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8µæÌû1J$a80fe51d-6004-49ba-9d9c-e1b204c8fa03
-•	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8½æÌû1J$fbbd1e32-f010-460f-a5f9-f6d4ba6e701f
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8ÚçœÓû1J$4e6a4fd1-435c-46ab-a55d-31f04784f220
+š
+java:S4144;"XUpdate this method so that its implementation is not identical to "postMain" on line 53.(‰È/8‘åÓû1J$3a0da681-196d-4618-8b2a-968bea7ee60a
+•	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8áçœÓû1J$9383a5be-62cf-46a1-8c87-36713f19592f
 ›
-java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ïñæÌû1J$be3c46be-39cf-4337-a15c-50bfd8fdd226
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8æçœÓû1J$124e8936-2813-421a-b1f9-f389aba61bc9
 ™
-java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8ïñæÌû1J$f39131c2-a5c9-4aba-8c7b-30c71855a2a4
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8æçœÓû1J$930b542d-deeb-4112-864f-860bbe1ea0a3
