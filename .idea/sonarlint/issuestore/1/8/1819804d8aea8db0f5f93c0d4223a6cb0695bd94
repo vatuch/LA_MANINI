@@ -1,4 +1,12 @@
 
 ©
-java:S1488)"aImmediately return this expression instead of assigning it to the temporary variable "authToken".(£Çµâùÿÿÿÿ8ôª¤Óû1J$fc1ea4ed-b9c0-417b-9a14-69c8d95f1af1
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8öª¤Óû1J$cb772d80-a791-4231-81ab-893f6118d06d
+java:S1488,"aImmediately return this expression instead of assigning it to the temporary variable "authToken".(£Çµâùÿÿÿÿ8ÚÜÓû1J$9aa2acef-b9cf-47f6-949f-a933e6f116d5
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8ÚÜÓû1J$bf6675cc-902c-4fee-a840-d026c70bcb80
+
+java:S1854'"<Remove this useless assignment to local variable "password".(™íÙ²8Ä½ÉÔû1J$bcf4bd0c-c490-40f8-8c92-e9f441a46a60
+|
+java:S1854&"9Remove this useless assignment to local variable "email".(›ÉË¾8Ä½ÉÔû1J$065449f1-94d1-4bed-93e2-9b3bf09d908e
+m
+java:S1481&"*Remove this unused "email" local variable.(›ÉË¾8Å½ÉÔû1J$546894cf-5ddd-4e41-9563-5542ae6072c2
+p
+java:S1481'"-Remove this unused "password" local variable.(™íÙ²8Ç½ÉÔû1J$b5d70f1d-65ce-45f9-89e4-355211048ee7

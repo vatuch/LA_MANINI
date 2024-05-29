@@ -1,7 +1,21 @@
 
-˜	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¸Ÿ—şÿÿÿÿ8‰İèşù1J$5a34374e-3150-420d-bf5f-3f1b5c6da84c
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8‰İèşù1J$edaa2b81-92e9-4cb0-8a55-0734ca0781a4
-É
-java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘ï‹şÿÿÿÿ8™İèşù1J$ccbb0e6a-bd72-4b12-91c9-c94990705b77
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8ãò¶©ü1J$27c95198-474f-46ac-b243-91f24181d0ec
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$18d4c5e2-ce25-47ae-9232-c3a2b37577b9
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$55cd0965-1f23-453f-8835-5c480bf2aa78
+p	java:S108s")Either remove or fill this block of code.(¦¸ˆ§ùÿÿÿÿ8øò¶©ü1J$b25d6f02-4ece-4ff4-9c8e-d01fd7d176da
+p
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8ô°Ä©ü1J$c8b60d9e-7071-4fe2-af70-035c09c5d2b9
 †
-java:S1128">Remove this unused import 'org.jvnet.hk2.annotations.Service'.(™Ñ¹Àüÿÿÿÿ8©İèşù1J$7dce5af2-90b0-44cb-af6d-50082740b76f
+java:S1128	">Remove this unused import 'org.jvnet.hk2.annotations.Service'.(™Ñ¹Àüÿÿÿÿ8ô°Ä©ü1J$550e8547-0296-4980-a3c9-9d858d575b1e
+’
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8ô°Ä©ü1J$4e878d79-d1ad-4699-96d7-ec75908f9a32
+•
+java:S1128"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8ô°Ä©ü1J$3910633f-6959-47d2-bd97-d093ae3d3e8f
+Ÿ
+java:S1128"\Remove this unused import 'org.springframework.security.core.session.SessionIdChangedEvent'.(Ô•¨ã8ô°Ä©ü1J$6c8926cc-eeb8-4f87-8712-6237ea843f1b
+˜
+java:S1128"PRemove this unused import 'org.telegram.telegrambots.meta.generics.TelegramBot'.(ğ¸ûÑıÿÿÿÿ8ô°Ä©ü1J$5f3dcd95-045c-49c7-80b9-ba4bee5d831c
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô°Ä©ü1J$9d0775f4-a48f-410b-b226-e0951c36835e

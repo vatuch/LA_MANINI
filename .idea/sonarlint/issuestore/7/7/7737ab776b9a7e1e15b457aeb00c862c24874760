@@ -1,3 +1,5 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8’¤çþù1
-r	java:S114"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÉÇªÖúÿÿÿÿ8š¤çþù1
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8’¤çþù1J$90a4f027-08e1-41d0-86ae-f272f6d04b8a
+˜	java:S114	"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÉÇªÖúÿÿÿÿ8š¤çþù1J$96373699-9718-47aa-a621-d6cbaef3f55b
+‹
+java:S1128"CRemove this unused import 'com.lamanini.La.manini.models.Purchase'.(˜Þß×ùÿÿÿÿ8ŠÒ¡©ü1J$cf2678c2-693f-418c-a132-9bc78dcf0352

@@ -28,6 +28,7 @@ public class SecurityConfiguration {
     private final AuthenticationManager authenticationManager;
 
     private final UserDetailsService userDetailsService;
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http

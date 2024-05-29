@@ -26,7 +26,6 @@ public class AuthManager implements AuthenticationManager {
     private final UserRepository userRepository;
 
 
-
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
@@ -36,7 +35,11 @@ public class AuthManager implements AuthenticationManager {
         log.info("custom auth {}", authentication.isAuthenticated());
         log.info("custom auth {}", authentication.getName());
 
+        String email = (String) authentication.getPrincipal();
+        String password = (String) authentication.getCredentials();
+
         User user = userRepository.findByEmail((String) authentication.getPrincipal());
+
 
         UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
                 user.getEmail(), user.getPassword(), user.getAuthorities()

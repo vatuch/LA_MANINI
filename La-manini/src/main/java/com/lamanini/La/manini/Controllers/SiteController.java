@@ -14,6 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.core.io.Resource;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -33,12 +39,23 @@ import java.nio.file.Files;
 public class SiteController {
 
     private static final Logger log = LoggerFactory.getLogger(SiteController.class);
-    private final TelegramBotService telegramBotService;
     private final PurchaseRepository purchaseRepository;
     private final Individual_purchaseRepository individualPurchaseRepository;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
+    @Autowired
+    TelegramBotService telegramBotService;
+
+    @EventListener({ContextRefreshedEvent.class})
+    public void init() throws TelegramApiException{
+        TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
+        try {
+            telegramBotsApi.registerBot(telegramBotService);
+        }
+        catch (TelegramApiException e){
+        }
+    }
 
     @GetMapping("/img/{imageName}")
     public ResponseEntity<Resource> serveImage(@PathVariable String imageName) throws IOException {
@@ -101,7 +118,6 @@ public class SiteController {
         purchase.setTotal(totalString);
         purchase.setItems(items);
         purchaseRepository.save(purchase);
-        telegramBotService.sendPurchaseMessage(purchase);
         return "responce_order";
     }
 
@@ -115,14 +131,12 @@ public class SiteController {
         individual_purchase.setPhone(phone);
         individual_purchase.setWishes(wishes);
         individualPurchaseRepository.save(individual_purchase);
-        telegramBotService.sendIndividualPurchaseMessage(individual_purchase);
         return "responce_order";
     }
 
     @PostMapping("/create-purchase")
     public String createPurchase(@ModelAttribute Purchase purchase) {
         Purchase savedPurchase = purchaseRepository.save(purchase);
-        telegramBotService.sendPurchaseMessage(savedPurchase);
         return "responce_order";
     }
 
