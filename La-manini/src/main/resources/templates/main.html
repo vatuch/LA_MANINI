@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<h3> <a href="/personal">Профиль</a> </h3>
 <h2> LA MANINI </h2>
 <div class="heady">
     <p>Moscow</p>
@@ -291,8 +292,8 @@
         var totalInput = document.getElementById("total");
         var itemsInput = document.getElementById("items");
         var currentTotal = parseInt(totalInput.value.replace(/\D/g, ''));
-        var newTotal = currentTotal + price;
-        totalInput.value = newTotal;
+        var newTotal = currentTotal + price * 0.95;
+        totalInput.value = newTotal ;
         itemsInput.value += itemName;
         openForm();
     }

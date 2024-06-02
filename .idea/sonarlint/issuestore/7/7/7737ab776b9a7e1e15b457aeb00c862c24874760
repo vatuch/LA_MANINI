@@ -1,5 +1,9 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8’¤çşù1J$90a4f027-08e1-41d0-86ae-f272f6d04b8a
-˜	java:S114	"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÉÇªÖúÿÿÿÿ8š¤çşù1J$96373699-9718-47aa-a621-d6cbaef3f55b
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8’¤çşù1J$bd9fc284-bd7a-43d9-9e20-b7f400d71108
+˜	java:S114"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÉÇªÖúÿÿÿÿ8š¤çşù1J$ab7d229d-2f4c-400d-8127-dc7cf2f3d829
 ‹
-java:S1128"CRemove this unused import 'com.lamanini.La.manini.models.Purchase'.(˜Şß×ùÿÿÿÿ8ŠÒ¡©ü1J$cf2678c2-693f-418c-a132-9bc78dcf0352
+java:S1128"CRemove this unused import 'com.lamanini.La.manini.models.Purchase'.(˜Şß×ùÿÿÿÿ8ØïÓı1J$71488547-5a26-4163-8f33-5a7c4a3c1f84
+‚
+java:S1128"?Remove this unused import 'com.lamanini.La.manini.models.User'.(€­ùÛ8¸¼„Ôı1J$6e1241ee-3324-4908-ba86-cd049f35aa6a
+s
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¸¼„Ôı1J$a21242ad-3dad-4766-8af0-890a2050b45a

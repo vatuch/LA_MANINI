@@ -35,7 +35,7 @@ NLa-manini/src/main/java/com/lamanini/La/manini/Controllers/AuthController.java
 ULa-manini/src/main/java/com/lamanini/La/manini/Controllers/SecurityConfiguration.java,5\c\5c814bdbf3e5e9520709692108b5cbc450f13d03
 w
 GLa-manini/src/main/java/com/lamanini/La/manini/service/AuthManager.java,1\8\1819804d8aea8db0f5f93c0d4223a6cb0695bd94
-v
-FLa-manini/src/main/java/com/lamanini/La/manini/config/BotTelegram.java,2\2\224087d173fc0f0ec8651e4f887317087a68d0b5
 t
 DLa-manini/src/main/java/com/lamanini/La/manini/config/BotConfig.java,6\9\69b1e339c521e42b94801c709cafe003b58a3f5e
+Å
+QLa-manini/src/main/java/com/lamanini/La/manini/Controllers/ProfileController.java,d\e\deb5cc7e7b70f5af21cad0caf8f313617bb6acbd

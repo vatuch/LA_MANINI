@@ -1,21 +1,21 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8ãò¶©ü1J$27c95198-474f-46ac-b243-91f24181d0ec
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ş¦Šûÿÿÿÿ8ãò¶©ü1J$93e37a49-ab66-447a-93f4-11e638134137
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$18d4c5e2-ce25-47ae-9232-c3a2b37577b9
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$bae10052-3457-4cdd-b88f-b25186336e2b
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$55cd0965-1f23-453f-8835-5c480bf2aa78
-p	java:S108s")Either remove or fill this block of code.(¦¸ˆ§ùÿÿÿÿ8øò¶©ü1J$b25d6f02-4ece-4ff4-9c8e-d01fd7d176da
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğò¶©ü1J$50194f87-bd61-4d1a-874c-2f8cc132dd5d
+p	java:S108s")Either remove or fill this block of code.(¦¸ˆ§ùÿÿÿÿ8øò¶©ü1J$69f92f89-910b-4779-a64f-9862acd0d3ea
 p
-java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8ô°Ä©ü1J$c8b60d9e-7071-4fe2-af70-035c09c5d2b9
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8ô°Ä©ü1J$ac4c803a-e576-40f3-8cb1-71fc10893d03
 †
-java:S1128	">Remove this unused import 'org.jvnet.hk2.annotations.Service'.(™Ñ¹Àüÿÿÿÿ8ô°Ä©ü1J$550e8547-0296-4980-a3c9-9d858d575b1e
+java:S1128	">Remove this unused import 'org.jvnet.hk2.annotations.Service'.(™Ñ¹Àüÿÿÿÿ8ô°Ä©ü1J$69df88ba-053a-4acb-913a-d323e24b7038
 ’
-java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8ô°Ä©ü1J$4e878d79-d1ad-4699-96d7-ec75908f9a32
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8ô°Ä©ü1J$5c9e8c81-4067-434f-a2ff-869a3ade56ad
 •
-java:S1128"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8ô°Ä©ü1J$3910633f-6959-47d2-bd97-d093ae3d3e8f
+java:S1128"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8ô°Ä©ü1J$dcf7d155-2d3b-4afc-8e9b-b28d29339680
 Ÿ
-java:S1128"\Remove this unused import 'org.springframework.security.core.session.SessionIdChangedEvent'.(Ô•¨ã8ô°Ä©ü1J$6c8926cc-eeb8-4f87-8712-6237ea843f1b
+java:S1128"\Remove this unused import 'org.springframework.security.core.session.SessionIdChangedEvent'.(Ô•¨ã8ô°Ä©ü1J$2cf3653a-4aeb-441f-b760-9ded2b973c2c
 ˜
-java:S1128"PRemove this unused import 'org.telegram.telegrambots.meta.generics.TelegramBot'.(ğ¸ûÑıÿÿÿÿ8ô°Ä©ü1J$5f3dcd95-045c-49c7-80b9-ba4bee5d831c
+java:S1128"PRemove this unused import 'org.telegram.telegrambots.meta.generics.TelegramBot'.(ğ¸ûÑıÿÿÿÿ8ô°Ä©ü1J$297bbdcb-d98b-4fdb-a55b-e02a5805e976
 s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô°Ä©ü1J$9d0775f4-a48f-410b-b226-e0951c36835e
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ô°Ä©ü1J$3e7ca1d0-1f9c-413d-9913-88fd76d41218

@@ -1,2 +1,6 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8ÈÖ›¨ü1J$4f4260a0-6e1f-4bac-86f4-147f3042069c
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êéÅó8óŒ„Ôı1J$33a52901-c459-4f3a-8b58-36dc18aab549
+\
+java:S1128"?Remove this unused import 'com.lamanini.La.manini.models.User'.(€­ùÛ8©¼³Ôı1
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ª¼³Ôı1
