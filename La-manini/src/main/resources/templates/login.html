@@ -9,17 +9,57 @@
     <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-<h1>Войдите в свой кабинет или создайте его сейчас</h1>
-<form th:object="${user}" th:action="@{/processing_login}" method="post">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" th:field="*{email}" placeholder="Your email.." required>
+<style>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" th:field="*{password}" placeholder="Your password.." required>
-    <div th:if="${error}" class="error" th:text="${error}"></div>
-    <input type="submit" value="Войти">
-    <a th:href="@{/register}">Зарегистрироваться</a>
-</form>
-</form>
+    form {
+      font-family: 'Gilroy', sans-serif;
+      margin: 0 auto;
+      text-align: center
+    }
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 70%;
+      font-family: 'Gilroy', sans-serif;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: medium;
+  }
+
+    button[type="submit"] {
+    width: 75%;
+    height: 35px;
+    background-color: #D33160;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: medium;
+  }
+</style>
+<div class="form-container">
+    <h1>Вход в систему</h1>
+    <form th:object="${user}" th:action="@{/processing_login}" method="post">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" th:field="*{email}" placeholder="Введите email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" th:field="*{password}" placeholder="Введите пароль" required>
+        </div>
+        <div th:if="${error}" class="error" th:text="${error}"></div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Войти</button>
+            <a th:href="@{/register}" class="btn btn-link">Зарегистрироваться</a>
+        </div>
+    </form>
+</div>
 </body>
 </html>

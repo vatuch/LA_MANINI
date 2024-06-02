@@ -6,9 +6,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{/css/register.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
+
+<style>
+form {
+font-family: 'Gilroy', sans-serif;
+margin: 0 auto;
+text-align: center
+}
+
+div {
+margin-bottom: 10px;
+}
+
+textarea {
+width: 70%;
+font-family: 'Gilroy', sans-serif;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: medium;
+}
+
+button[type="submit"] {
+width: 75%;
+height: 35px;
+background-color: #D33160;
+color: white;
+padding: 10px;
+cursor: pointer;
+font-family: 'Gilroy', sans-serif;
+font-weight: medium;
+}
+</style>
 <body>
+<h1>Регистрация</h1>
 <form th:action="@{/register}" th:object="${user}" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" th:field="*{name}" placeholder="Your name.." required>
@@ -19,7 +54,9 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" th:field="*{password}" placeholder="Your password.." required>
 
+    <label> </label>
     <input type="submit" value="Register">
+
 </form>
 </body>
 </html>
