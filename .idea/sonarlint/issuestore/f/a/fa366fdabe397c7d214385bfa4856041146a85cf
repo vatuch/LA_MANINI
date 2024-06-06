@@ -1,23 +1,21 @@
 
 —
-java:S1192y"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8¼‘§ü1J$cad50f6e-836e-43ac-9137-d5310dc3c077
+java:S1192x"ODefine a constant instead of duplicating this literal "responce_order" 3 times.(ûöŠ…ùÿÿÿÿ8¼‘§ü1J$00255499-c7f0-4d3d-bfc4-73b2b0e232a5
 Š
-java:S1192¡"FDefine a constant instead of duplicating this literal "login" 3 times.(Íı‡Ç8º¤¥¨ü1J$a6fed2a0-1484-42b1-a4b5-d0d8cba334a9
-™	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8¾‘§ü1J$7399adb3-de4d-4e82-8cb3-89a384d125bd
+java:S1192 "FDefine a constant instead of duplicating this literal "login" 3 times.(Íı‡Ç8º¤¥¨ü1J$d16d7ae6-5035-43ae-9e2a-544b8b596650
+™	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜ş üÿÿÿÿ8¾‘§ü1J$acf92413-cb87-4256-8d5e-c8a8a532893c
 £
-java:S1488g"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8¿‘§ü1J$50d65c91-6c89-427f-9dda-574b30c13ada
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8Á‘§ü1J$a37c4650-6b6b-40b1-bb46-34e21d1a5ed7
+java:S1488f"[Immediately return this expression instead of assigning it to the temporary variable "css".(ÌÖ­ûÿÿÿÿ8¿‘§ü1J$604c2e30-7a07-4150-8735-73b396004193
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8Á‘§ü1J$8560c940-71c6-47f0-8d6a-2bf50b13c7d3
 ­
-java:S6833%"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8Õ‘§ü1J$9c7af912-e980-4bb4-b305-b935c4fb67c3
+java:S6833$"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.(íœ¡ñùÿÿÿÿ8Õ‘§ü1J$c56d955a-b03e-4254-b505-0a9a55480a57
 …
-java:S6813/"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ö‘§ü1J$8e3050d2-1215-4fdd-942f-6fa3b865462c
+java:S6813."BRemove this field injection and use constructor injection instead.(êæÄŞ8Ö‘§ü1J$5dea5094-9c9c-468e-9bd3-4b1d2fe60afe
 š
-java:S4144L"XUpdate this method so that its implementation is not identical to "postMain" on line 70.(‰È/8×‘§ü1J$8f9f0eaa-eb8e-4039-9cfe-533add41d8f2
-k	java:S1088")Either remove or fill this block of code.(€ıíé8Ü‘§ü1J$a04970d0-17b7-4a4d-a918-bd20ab500607
-•	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8á‘§ü1J$cb0d1b31-222e-4479-870a-9e56152abf27
+java:S4144K"XUpdate this method so that its implementation is not identical to "postMain" on line 69.(‰È/8×‘§ü1J$ae6f9b82-f27b-4cd4-abc9-b26458100593
+k	java:S1087")Either remove or fill this block of code.(€ıíé8Ü‘§ü1J$336a34aa-6864-433b-bd36-69b12431328f
+•	java:S100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Ô˜Ëúÿÿÿÿ8á‘§ü1J$f14dfcf4-520f-487e-a804-2c366cb61e70
 Š
-java:S1854‹"ARemove this useless assignment to local variable "savedPurchase".(ÊÍ¨ßüÿÿÿÿ8”ğ²§ü1J$d9a86d44-853a-4b97-b98f-3e7c90ec5545
+java:S1854Š"ARemove this useless assignment to local variable "savedPurchase".(ÊÍ¨ßüÿÿÿÿ8”ğ²§ü1J$c7902ecd-a1e3-4939-a5d5-4fa9e0ef9b00
 {
-java:S1481‹"2Remove this unused "savedPurchase" local variable.(ÊÍ¨ßüÿÿÿÿ8•ğ²§ü1J$ed2ca098-eaba-4851-a86f-0bcf46285fe6
-™
-java:S1128"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8îõ½§ü1J$c078264a-900e-4aa0-b9b8-0b6938a36012
+java:S1481Š"2Remove this unused "savedPurchase" local variable.(ÊÍ¨ßüÿÿÿÿ8•ğ²§ü1J$e87eaae1-81c3-409c-a6ec-2dd8e2384c4c

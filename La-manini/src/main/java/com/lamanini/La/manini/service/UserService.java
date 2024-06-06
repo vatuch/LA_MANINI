@@ -1,7 +1,7 @@
 package com.lamanini.La.manini.service;
 
 import com.lamanini.La.manini.models.User;
-import com.lamanini.La.manini.reposetories.UserRepository;
+import com.lamanini.La.manini.repositories.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,11 +1,9 @@
     package com.lamanini.La.manini.Controllers;
 
-    import ch.qos.logback.core.model.Model;
     import com.lamanini.La.manini.models.User;
-    import com.lamanini.La.manini.reposetories.UserRepository;
+    import com.lamanini.La.manini.repositories.UserRepository;
     import jakarta.servlet.http.HttpSession;
     import lombok.RequiredArgsConstructor;
-    import lombok.extern.slf4j.Slf4j;
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
     import org.springframework.beans.factory.annotation.Autowired;

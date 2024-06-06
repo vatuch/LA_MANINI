@@ -39,3 +39,7 @@ t
 DLa-manini/src/main/java/com/lamanini/La/manini/config/BotConfig.java,6\9\69b1e339c521e42b94801c709cafe003b58a3f5e
 Å
 QLa-manini/src/main/java/com/lamanini/La/manini/Controllers/ProfileController.java,d\e\deb5cc7e7b70f5af21cad0caf8f313617bb6acbd
+Ä
+PLa-manini/src/main/java/com/lamanini/La/manini/config/SecurityConfiguration.java,6\a\6a37daba9bc981d8499668e9747dd92fe3fda541
+É
+SLa-manini/src/main/java/com/lamanini/La/manini/repositories/PurchaseRepository.java,1\6\16762a6ce6aac97bb3e2369bcfd64651a4977075

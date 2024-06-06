@@ -1,25 +1,8 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8Úí…Ôý1J$7a75f166-8f13-4ef0-a6e4-d729eccd236f
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­Øîs8Úí…Ôý1J$c7f32809-0d4b-4586-b596-46353914b28e
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$aa204634-538a-4af4-8060-e8ae41dbc33a
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$ca7f5ba2-ca6e-4161-98f9-40a8fa36242d
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$5e62c901-5666-41ce-8d79-c4de12b87140
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$a6425907-5f68-4a48-aff6-dd687c8e6721
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$267ef49c-ee98-4b7e-9fa5-406c9cc54645
-ƒ	java:S125*"<This block of commented-out lines of code should be removed.(÷ìáÔûÿÿÿÿ8¥úµÔý1J$e713c3f7-da21-4fc4-bf17-67c48d365765
-~	java:S125."<This block of commented-out lines of code should be removed.(­›ñ÷8®èµÔý1J$02e13789-1f50-4767-bc8d-0678daf16d19
-
-java:S1128"<Remove this unused import 'ch.qos.logback.core.model.Model'.(·—ðœ8¦úµÔý1J$c87b9635-2587-4e87-b254-d78e6ff4ff8d
-–
-java:S1128"NRemove this unused import 'com.lamanini.La.manini.models.Individual_purchase'.(©½ñÕþÿÿÿÿ8¦úµÔý1J$debb5871-8617-4818-9f1a-4314194629dc
-‹
-java:S1128"CRemove this unused import 'com.lamanini.La.manini.models.Purchase'.(˜Þß×ùÿÿÿÿ8¦úµÔý1J$6254c092-13af-4eb3-9d93-7e86be09191b
-
-java:S1128
-"GRemove this unused import 'com.lamanini.La.manini.service.UserService'.(Òßâþÿÿÿÿ8¦úµÔý1J$721cc449-ed10-4381-9bce-756a5d18fa82
-ƒ
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØŽúøÿÿÿÿ8¦úµÔý1J$8bb3c578-bfd5-4a05-b495-bbe3fea60a79
-–
-java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë8¦úµÔý1J$c30e8c1d-db45-44c3-bc86-93d769931f96
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¦úµÔý1J$abee90c4-cddd-4a11-85ff-111a34b2e20d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ýí…Ôý1J$ad0a058c-edda-4c3d-8e15-697f81b3d57a

@@ -1,4 +1,4 @@
-package com.lamanini.La.manini.reposetories;
+package com.lamanini.La.manini.repositories;
 
 import com.lamanini.La.manini.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;

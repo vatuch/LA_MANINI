@@ -3,22 +3,14 @@ package com.lamanini.La.manini.service;
 import com.lamanini.La.manini.config.BotConfig;
 import com.lamanini.La.manini.models.Individual_purchase;
 import com.lamanini.La.manini.models.Purchase;
-import com.lamanini.La.manini.reposetories.Individual_purchaseRepository;
-import com.lamanini.La.manini.reposetories.PurchaseRepository;
-import lombok.Data;
-import org.jvnet.hk2.annotations.Service;
+import com.lamanini.La.manini.repositories.Individual_purchaseRepository;
+import com.lamanini.La.manini.repositories.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.security.core.session.SessionIdChangedEvent;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.generics.TelegramBot;
-
-import java.util.List;
 
 @Component
 public class TelegramBotService extends TelegramLongPollingBot {
